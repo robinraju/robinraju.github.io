@@ -1,0 +1,10 @@
+# main links
+main:
+  - title: "Home"
+    url: /
+  - title: "Developer stories"
+    url: /developer/
+  - title: "Travel notes"
+    url: /travel/
+  - title: "About"
+    url: /about/
