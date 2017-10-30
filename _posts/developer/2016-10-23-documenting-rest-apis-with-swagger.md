@@ -7,7 +7,7 @@ tags: [REST API, swagger]
 header:
     teaser: /assets/images/posts/developer/swagger-logo.png
 comments: true
-author_profile: true
+author_profile: false
 share: true
 related: true
 permalink: /:categories/:year-:month-:day-:title/
