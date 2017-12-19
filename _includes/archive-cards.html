@@ -1,0 +1,50 @@
+{% if post.header.teaser %}
+{% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+{% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+{% assign title = post.title %}
+{% endif %}
+
+
+{% if post.link %}
+<a class="card" href="{{ post.link }}">
+    <span class="card-header" style="background-image: url('{{ teaser | absolute_url }}');"></span>
+    <div class="category">{{post.category}}</div>
+    <span class="card-title"><h3>{{ title }}</h3></span>
+    {% if post.excerpt %}
+    <span class="card-summary">
+				{{ post.excerpt | markdownify | strip_html | truncate: 160 }}
+			</span>
+    {% endif %}
+    {% if post.read_time %}
+    <span class="card-meta">
+				<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+		<p><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published: </strong> <time
+                datetime="{{ post.date: " %Y-%m-%d" }}">{{ post.date: "%B %d, %Y" }}</time></p>
+			</span>
+    {% endif %}
+</a>
+{% else %}
+<a class="card" href="{{ post.url | absolute_url }}">
+    <span class="card-header" style="background-image: url('{{ teaser | absolute_url }}');"></span>
+    <div class="category">{{post.category}}</div>
+    <span class="card-title"><h3>{{ title }}</h3></span>
+    {% if post.excerpt %}
+    <span class="card-summary">
+				{{ post.excerpt | markdownify | strip_html | truncate: 160 }}
+			</span>
+    {% endif %}
+    {% if post.read_time %}
+    <span class="card-meta">
+				<!--<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>-->
+		<p><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published: </strong> <time
+                datetime="{{ post.date:" %Y-%m-%d" }}">{{ post.date: "%B %d, %Y" }}</time></p>
+			</span>
+    {% endif %}
+</a>
+{% endif %}
