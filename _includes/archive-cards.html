@@ -25,7 +25,7 @@
     <span class="card-meta">
 				<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
 		<p><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published: </strong> <time
-                datetime="{{ post.date: " %Y-%m-%d" }}">{{ post.date: "%B %d, %Y" }}</time></p>
+                datetime="{{ post.date: ' %Y-%m-%d' }}">{{ post.date | date_to_long_string}}</time></p>
 			</span>
     {% endif %}
 </a>
@@ -41,9 +41,8 @@
     {% endif %}
     {% if post.read_time %}
     <span class="card-meta">
-				<!--<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>-->
-		<p><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published: </strong> <time
-                datetime="{{ post.date:" %Y-%m-%d" }}">{{ post.date: "%B %d, %Y" }}</time></p>
+		<p><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published: </strong><time
+      datetime="{{ post.date: ' %Y-%m-%d' }}">{{ post.date | date_to_long_string}}</time></p>
 			</span>
     {% endif %}
 </a>
