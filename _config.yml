@@ -45,15 +45,19 @@ staticman:
     date:
       type               : "date"
       options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+reCaptcha:
+  siteKey                :
+  secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
+search                   :  true
 
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-alexa_site_verification  :
 yandex_site_verification :
+naver_site_verification  :
 
 # Social Sharing
 twitter:
@@ -88,13 +92,14 @@ author:
   avatar           : "/assets/images/robinraju-profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Developer | Blogger | Traveller"
   location         : "Cochin, India"
-  email            : 
+  email            :
   uri              :
+  home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : 
+  facebook         :
   foursquare       :
   github           : "robinraju"
   gitlab           :
@@ -112,7 +117,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : #
 
 
 # Reading Files
@@ -143,6 +148,8 @@ exclude:
   - Rakefile
   - README
   - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
@@ -217,7 +224,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
@@ -238,6 +244,7 @@ compress_html:
   ignore:
     envs: development
 
+
 # Defaults
 defaults:
   # _posts
@@ -251,13 +258,3 @@ defaults:
       comments: true
       share: true
       related: true
-
-defaults:
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: default
-      author_profile: true
-

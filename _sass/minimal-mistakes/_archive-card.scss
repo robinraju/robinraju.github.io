@@ -29,7 +29,7 @@
   box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 17px;
   line-height: 1.4;
   font-family: 'Jaldi', sans-serif;
@@ -76,6 +76,7 @@
 .card .card-summary {
   padding: 2% 2% 1% 5%;
 }
+
 .card .card-header {
   position: relative;
   height: 140px;
@@ -93,7 +94,7 @@
   background-color: rgba(255, 255, 255, 0);
 }
 .card .card-title {
-  background: #3a87ad;
+  background: #6e9e71;
   padding-top: 2px;
   color: white;
   font-family: 'Roboto Condensed', sans-serif;
@@ -138,7 +139,7 @@
   box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
 }
 .card:hover .card-title, .card:focus .card-title {
-  background: #2f92ca;
+  background: #6cab70;
 }
 .card:hover .card-meta, .card:focus .card-meta {
   max-height: 1em;
