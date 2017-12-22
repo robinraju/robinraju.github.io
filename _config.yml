@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint", "sunrise", "aqua", "plum", "neon"
 
 # Site Settings
 locale                   : "en"
@@ -13,7 +13,7 @@ title                    : "devrob.in"
 title_separator          : "-"
 name                     : "Robin Raju"
 description              : "My thoughts on tech."
-url                      : ""
+url                      : "https://robinraju.github.io"
 baseurl                  : ""# the subpath of your site, e.g. "/blog"
 repository               : "robinraju/robinraju.github.io"
 teaser                   : ""  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
