@@ -73,6 +73,9 @@ $(document).ready(function() {
                 '<img src="'+store[ref].teaser+'" alt="">'+
           '<div class="archive-cards">' +
               '<p class="archive__item-excerpt" itemprop="description">'+store[ref].excerpt+'</p>'+
+          '<span class="span_readmore">\n' +
+          '   <a href="'+store[ref].url+'" class="btn btn-flat btn-flat-blue btn-flat-radius btn-small">Read more</a>\n' +
+          '</span>' +
           '</div>' +
           '</div>'+
             '</article>'+
