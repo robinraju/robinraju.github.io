@@ -7,6 +7,9 @@ tags: [REST API, swagger]
 header:
     teaser: /assets/images/posts/developer/swagger-logo.png
 comments: true
+toc: true
+toc_label: "Contents at a glance"
+toc_icon: "sitemap"
 author_profile: false
 share: true
 related: true

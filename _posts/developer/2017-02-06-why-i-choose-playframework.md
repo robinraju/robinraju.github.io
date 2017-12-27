@@ -7,6 +7,9 @@ tags: [play framework, java, scala, akka, reactive programming]
 header:
     teaser: /assets/images/posts/developer/play-framework/play-logo.png
 comments: true
+toc: true
+toc_label: "Contents at a glance"
+toc_icon: "sitemap"
 author_profile: false
 share: true
 related: true
@@ -15,9 +18,11 @@ excerpt: My views about the play framework. A developer friendly, solid and fast
 published: true
 ---
 
-The ***Play framework*** is a web framework for the JVM that breaks away from the Servlet Specification and JEE best practices those were in use for a while.
+The ***Play framework*** is a web framework for JVM that breaks away from the Servlet Specification and JEE best practices those were in use for a while.
 Play inherits a fully reactive programming model through the use of **Futures** for asynchronous programming and **Akka** for simplifying concurrency at its best.
-Besides the advantages over the so-called Servlet based web frameworks, Play has some extreme advantages. It has full support for two of the most popular 
+Besides the advantages over the so-called Servlet based web frameworks, 
+![image-right](/assets/images/posts/developer/play-framework/play_ecosystem.png){: .align-right}
+Play has some extreme advantages. It has full support for two of the most popular 
 languages on JVM, ***Java and Scala.***
 
 ## Reactive, Stateless, asynchronous and non-blocking under the hood
@@ -25,6 +30,8 @@ Every web framework does essentially the same job of processing the HTTP request
 which contains the book keeping information needed for a CPU core to execute instructions  and the thread processes the request until it sends a 
 response back to the client. This is inefficient for web systems because servicing a typical request requires blocking the thread for a number of 
 tasks like database transactions, external web service calls, etc. 
+
+![full](/assets/images/posts/developer/play-framework/play_request_lifecycle.png){: .full}
 
 Play has a **stateless** design, meaning it does not rely on server-side session state. Instead, session state is kept in a cookie and is therefore available to any server node that receives a request.
 It supports **asynchronous** requests, which does not require you to tie up a thread while requests are in progress. Play uses work stealing for scheduling the tasks that comes with each request, 
