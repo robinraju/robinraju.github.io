@@ -18,7 +18,7 @@ excerpt: Install and configure Let's encrypt, the free and legitimate SSL for a 
 published: true
 ---
 [Let's Encrypt](https://letsencrypt.org/){:target="_blank"} is a free Certificate Authority (CA) that issues SSL certificates. 
-You can use these SSL certificates to secure traffic to and from your website. Here is how I did for a site hosted on AWS EC2
+You can use these SSL certificates to secure traffic to and from your website. Here is how I did it for a site hosted on AWS EC2
 powered by [Bitnami LAMP](https://bitnami.com/stack/lamp){:target="_blank"}
 
 ### Prerequisites
@@ -92,8 +92,8 @@ $ sudo /opt/bitnami/ctlscript.sh restart apache
 
 ### Force HTTPS redirection
 
-We can now configure Apache to force redirect all incom http requests to https.
-Add the following lines to file: **/opt/bitnami/apache2/conf/bitnami/bitnami.conf**
+We can now configure Apache to force redirect all incoming http requests to https.
+Add the following lines to file: */opt/bitnami/apache2/conf/bitnami/bitnami.conf*
 
 ```xml
 <VirtualHost _default_:80>
@@ -109,7 +109,7 @@ Add the following lines to file: **/opt/bitnami/apache2/conf/bitnami/bitnami.con
 
 ### Auto-renew your SSL certificates
 
-Let's encrypt certificates has a validity of 90 days only. We need to renew it manually before it expiry.
+Let's encrypt certificates has a validity of 90 days only. We need to renew it manually before its expiry.
 To get rid of this head ache, lets setup an auto-renew script using a cron task.
 
 **Edit crontab file**
