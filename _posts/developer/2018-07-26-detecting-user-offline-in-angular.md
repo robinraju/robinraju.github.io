@@ -184,3 +184,5 @@ We can now include the newly created component to our **app-component.html** as 
 Once our application is up and running, we can test it by disconnecting network connection or can simulte the action
 from Chrome's developer Tools.
 Navigate to Network Tab and toggle the offline checkbox. 
+
+See it in action [https://stackblitz.com/edit/angular-offline-online-detection](https://stackblitz.com/edit/angular-offline-online-detection){:target="_blank"}
