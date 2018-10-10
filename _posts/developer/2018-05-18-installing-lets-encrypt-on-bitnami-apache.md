@@ -119,7 +119,7 @@ $ sudo crontab -e
 At the bottom of your crontab file, you will enter a script which will tell your server to check for certificate renewals once per week, and to automatically renew the certificates if they are about to expire.
 
 ```text
-45 2 * * 6 cd /etc/letsencrypt/ && ./certbot-auto renew && /opt/bitnami/ctlscript.sh restart
+47 05,17 * * * sudo certbot renew && sudo /opt/bitnami/ctlscript.sh restart
 ```
 
 **Congratulations!** You've successfully installed and configured your Let's Encrypt SSL certificates.
