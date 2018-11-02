@@ -14,7 +14,7 @@ author_profile: false
 share: true
 related: true
 permalink: /:categories/:year-:month-:day-:title/
-excerpt: Install and configure Let's encrypt, the free SSL certificate for you website.
+excerpt: Install and configure Let's encrypt, the free SSL certificate on your website.
 published: true
 ---
 
