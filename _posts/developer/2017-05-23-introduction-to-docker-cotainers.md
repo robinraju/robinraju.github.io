@@ -148,7 +148,7 @@ $ docker run -p 8080:80 --name web -d -v $PWD/nginx-html:/usr/share/nginx/html n
 ``` 
 The `-v` option points the `nginx-html` directory from the host file system to the container's directory. 
 Any change made to this directory will be visible at both the locations.
-Now add any .html files inside this newly created directory and we can see it being served by nginx at `http:localhost:8080`
+Now add any .html files inside this newly created directory and we can see it being served by nginx at `http://localhost:8080/<file-name.html>`
 
 ### Accessing shell inside container
 We can get into a running container and perform any supported commands there by running the following command:
