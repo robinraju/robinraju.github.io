@@ -25,3 +25,15 @@ Neo4j helps us to simplify the data model, because the way that the data is repr
 ## What is a Graph?
 A graph in its simplest form is a collection of nodes and relationships. A node can be an entity such as a person, place, object or relevant piece of data.
 And a relationship represents how two nodes are associated.
+{% include figure image_path="assets/images/posts/developer/neo4j/native-diagram.png" alt="Https icon" caption="Source: neo4j.com" %}
+
+## Neo4J
+Neo4j is a highly scalable native graph database. It provides ACID-compliant transactional backend for your applications. It efficiently implements the property graph model down to the storage level.
+Accessing nodes and relationships in a native graph database is an efficient, constant-time operation and allows you to quickly traverse millions of connections per second per cpu core.
+Some of the following particular features make Neo4j very popular among developers, architects, and DBAs:
+- Performance
+- High availability
+- Agility
+- Security
+- Developer friendly
+- Scalable
