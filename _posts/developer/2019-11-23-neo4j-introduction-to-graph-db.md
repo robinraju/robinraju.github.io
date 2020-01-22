@@ -24,3 +24,4 @@ Neo4j helps us to simplify the data model, because the way that the data is repr
 
 ## What is a Graph?
 A graph in its simplest form is a collection of nodes and relationships. A node can be an entity such as a person, place, object or relevant piece of data.
+And a relationship represents how two nodes are associated.
