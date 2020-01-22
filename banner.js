@@ -6,8 +6,8 @@ const padStart = str => ('0' + str).slice(-2)
 const dateObj = new Date;
 const date = `${dateObj.getFullYear()}-${padStart(dateObj.getMonth() + 1)}-${padStart(dateObj.getDate())}`;
 const banner = `/*!
- * Robin Raju aka devrob.in blog by ${pkg.author}
- * Copyright ${dateObj.getFullYear()} Robin Raju | http://devrob.in
+ * Robin Raju aka robinraju.com blog by ${pkg.author}
+ * Copyright ${dateObj.getFullYear()} Robin Raju | https://robinraju.com
  * Licensed under ${pkg.license}
  */
 `;
