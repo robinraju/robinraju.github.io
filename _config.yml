@@ -92,7 +92,7 @@ author:
   avatar           : "/assets/images/robinraju-profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Developer | Blogger | Traveller"
   location         : "Cochin, India"
-  email            :
+  email            : "hello@robinraju.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
