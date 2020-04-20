@@ -15,7 +15,7 @@ share: true
 related: true
 permalink: /:categories/:year-:month-:day-:title/
 excerpt: My views about the play framework. A developer friendly, solid and fast framework built for web and mobile that can scale massively. 
-published: true
+published: false
 ---
 
 The ***Play framework*** is a web framework for JVM that breaks away from the Servlet Specification and JEE best practices those were in use for a while.
