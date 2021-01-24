@@ -1,0 +1,4 @@
+# Stop crawling this obsolete site
+
+User-agent: * 
+Disallow: /
